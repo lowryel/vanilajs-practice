@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(41, 41, 37);
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.movie-container{
+    margin: 20px 0;
+}
+
+.movie-container select{
+    background-color: rgb(245, 250, 255);
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.seat{
+    background-color: rgb(138, 127, 113);
+    height: 12px;
+    width: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 8px;
+}
+
+.seat.selected{
+    background-color: rgb(144, 245, 203);
+}
+
+.seat.occupied{
+    background-color: rgb(255, 253, 253);
+}
+
+.seat:nth-of-type(2){
+    margin-right: 25px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 25px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.row{
+    display: flex;
+}
+
+.showcase{
+    background-color: rgb(51, 33, 7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small{
+    margin-left: 2px;
+}
+
+.screen{
+    background-color: rgb(255, 253, 253);
+    height: 70px;
+    width: 100%;
+    margin: 10px 0;
+    transform: rotateX(-45deg);
+    box-shadow: rgb(255, 255, 255, 0.7);
+}
+
+.container{
+    perspective: 600px;
+    margin-bottom: 30px;
+}
+
+p.text span{
+    color: rgb(166, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
