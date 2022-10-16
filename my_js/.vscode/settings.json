@@ -1,6 +1,6 @@
 {
-    "editor.formatOnType": true,
-    "files.autoSave": "afterDelay",
-    "editor.wordWrap": "on",
-    "editor.autoClosingOvertype": "always"
+  "editor.formatOnType": true,
+  "files.autoSave": "afterDelay",
+  "editor.wordWrap": "on",
+  "editor.autoClosingOvertype": "always"
 }

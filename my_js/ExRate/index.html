@@ -1,114 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exchange Rate</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div>
-        <div class="container subpixel-antialiased">
-            <img class="shadow-sm" src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/64/000000/external-currency-finance-xnimrodx-lineal-gradient-xnimrodx.png" alt="currency"/>
-            <h1 class="md:text-s text-3xl text-center">Currency Exchange Rate</h1>
-            <p class=" text-center">Choose the currency and the amount to get the exchange rate</p>
-            <div id="xrate" class="text-area">
+      <div class="container subpixel-antialiased">
+        <img
+          class="shadow-sm"
+          src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/64/000000/external-currency-finance-xnimrodx-lineal-gradient-xnimrodx.png"
+          alt="currency"
+        />
+        <h1 class="md:text-s text-3xl text-center">Currency Exchange Rate</h1>
+        <p class="text-center">
+          Choose the currency and the amount to get the exchange rate
+        </p>
+        <div id="xrate" class="text-area">
+          <div class="currency border-white rounded p-2">
+            <select id="currency-1" class="border-white rounded bg-green-300">
+              <option value="USD" selected>USD</option>
+              <option value="JPY">JPY</option>
+              <option value="EUR">EUR</option>
+              <option value="CNY">CNY</option>
+              <option value="CAD">CAD</option>
+              <option value="GHS">GHS</option>
+              <option value="GBP">GBP</option>
+            </select>
+            <input
+              class="rounded bg-gray-600 text-center border-white"
+              type="number"
+              id="currency-one"
+              placeholder="0"
+              value="1"
+            />
+          </div>
 
-                <div class="currency border-white rounded p-2">
-                    <select id="currency-1" class="border-white rounded bg-green-300">
-                        <option value="USD" selected>USD</option>
-                        <option value="JPY">JPY</option>
-                        <option value="EUR">EUR</option>
-                        <option value="CNY">CNY</option>
-                        <option value="CAD">CAD</option>
-                        <option value="GHS">GHS</option>
-                        <option value="GBP">GBP</option>
-                    </select>
-                    <input class="rounded bg-gray-600 text-center border-white" type="number" id="currency-one" placeholder="0" value="1">
-                </div>
+          <div class="flex justify-content-between item-center">
+            <button
+              id="swap-button"
+              class="btn p-2 m-6 bg-green-600 border-2 rounded"
+            >
+              swap
+            </button>
+            <div class="rate p-2 bg-green-600 m-6" id="rate"></div>
+          </div>
 
-                <div class="flex justify-content-between item-center">
-                    <button id="swap-button" class="btn p-2 m-6 bg-green-600 border-2 rounded">
-                        swap
-                    </button>
-                    <div class="rate p-2 bg-green-600 m-6" id="rate"></div>
-                </div>
-
-                <div class="currency border-white rounded">
-                    <select id="currency-2" class="border-white rounded bg-green-300">
-                        <option value="USD">USD</option>
-                        <option value="JPY">JPY</option>
-                        <option value="EUR">EUR</option>
-                        <option value="CNY" selected>CNY</option>
-                        <option value="CAD">CAD</option>
-                        <option value="GHS">GHS</option>
-                        <option value="GBP">GBP</option>
-                    </select>
-                    <input class="rounded bg-gray-600 text-center border-white" type="number" id="currency-two" placeholder="1">
-                </div>
-
-            </div>
+          <div class="currency border-white rounded">
+            <select id="currency-2" class="border-white rounded bg-green-300">
+              <option value="USD">USD</option>
+              <option value="JPY">JPY</option>
+              <option value="EUR">EUR</option>
+              <option value="CNY" selected>CNY</option>
+              <option value="CAD">CAD</option>
+              <option value="GHS">GHS</option>
+              <option value="GBP">GBP</option>
+            </select>
+            <input
+              class="rounded bg-gray-600 text-center border-white"
+              type="number"
+              id="currency-two"
+              placeholder="1"
+            />
+          </div>
         </div>
-
+      </div>
     </div>
+  </body>
 
-</body>
-
-<script>
+  <script>
     // const xrate=document.getElementById('xrate');
-    const currencyOne=document.getElementById('currency-1')
-    const currencyTwo = document.getElementById('currency-2')
-    const amountOne = document.getElementById('currency-one')
-    const amountTwo = document.getElementById('currency-two')
-    const swap=document.getElementById('swap-button')
-    const ratio=document.getElementById('rate')
+    const currencyOne = document.getElementById("currency-1");
+    const currencyTwo = document.getElementById("currency-2");
+    const amountOne = document.getElementById("currency-one");
+    const amountTwo = document.getElementById("currency-two");
+    const swap = document.getElementById("swap-button");
+    const ratio = document.getElementById("rate");
 
-    const calculate=function() {
-        const currencyElOne= currencyOne.value;
-        const currencyElTwo = currencyTwo.value;
-        const amountElOne=amountOne.value;
-        const amountElTwo = amountTwo.value;
+    const calculate = function () {
+      const currencyElOne = currencyOne.value;
+      const currencyElTwo = currencyTwo.value;
+      const amountElOne = amountOne.value;
+      const amountElTwo = amountTwo.value;
 
-        var myHeaders = new Headers();
-        myHeaders.append("apikey", "CRifhM0lRzvViymjV85bIabfzJvZpwQE");
+      var myHeaders = new Headers();
+      myHeaders.append("apikey", "CRifhM0lRzvViymjV85bIabfzJvZpwQE");
 
-        const requestOptions = {
-            method: 'GET',
-            redirect: 'follow',
-            headers: myHeaders
-        };
+      const requestOptions = {
+        method: "GET",
+        redirect: "follow",
+        headers: myHeaders,
+      };
 
-        let endpoint=(`https://api.apilayer.com/fixer/convert?to=${currencyElTwo}&from=${currencyElOne}&amount=${amountElOne}`)
-        console.log("A change of event", currencyElOne, currencyElTwo, amountElOne, amountElTwo);
+      let endpoint = `https://api.apilayer.com/fixer/convert?to=${currencyElTwo}&from=${currencyElOne}&amount=${amountElOne}`;
+      console.log(
+        "A change of event",
+        currencyElOne,
+        currencyElTwo,
+        amountElOne,
+        amountElTwo
+      );
 
-        fetch(endpoint, requestOptions)
-            .then(response => response.json())
-            .then((result) => {
-                console.log(result)
-                const rates=result.info.rate;
-                ratio.innerText=`1 ${currencyOne.value} = ${rates} ${currencyTwo.value}`;
-                amountTwo.value=(amountOne.value * rates).toFixed(2);
-            })
-            .catch(error => console.log('error', error));
-    }
+      fetch(endpoint, requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+          console.log(result);
+          const rates = result.info.rate;
+          ratio.innerText = `1 ${currencyOne.value} = ${rates} ${currencyTwo.value}`;
+          amountTwo.value = (amountOne.value * rates).toFixed(2);
+        })
+        .catch((error) => console.log("error", error));
+    };
 
     //  Event Listeners
-    currencyOne.addEventListener('change', calculate);
-    amountOne.addEventListener('input', calculate);
-    currencyTwo.addEventListener('change', calculate);
-    amountTwo.addEventListener('input', calculate);
+    currencyOne.addEventListener("change", calculate);
+    amountOne.addEventListener("input", calculate);
+    currencyTwo.addEventListener("change", calculate);
+    amountTwo.addEventListener("input", calculate);
     // calculate()
 
-    swap.addEventListener('click', ()=>{
-        const swap = currencyOne.value;
-        currencyOne.value = currencyTwo.value;
-        currencyTwo.value = swap;
-    })
-
-</script>
-
-
+    swap.addEventListener("click", () => {
+      const swap = currencyOne.value;
+      currencyOne.value = currencyTwo.value;
+      currencyTwo.value = swap;
+    });
+  </script>
 </html>

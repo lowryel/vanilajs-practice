@@ -43,7 +43,6 @@
 // console.log(Number(586564));
 // console.log("thi is the first line\nAnd this is the second");
 
-
 // for (let num = 0; num<=12; num = num+2){
 //   console.log(num);
 // }
@@ -54,7 +53,6 @@
 //     }else{
 //       console.log('Name not same as Atsu,',username);
 //     };
-
 
 // TODAY"S DATE 13/12/2021 STUDIES
 // let num=20;
@@ -73,7 +71,7 @@
 //   console.log("Fizz", num);
 // }else if(num%5==0){
 //   console.log("Buzz", num);
-  
+
 // }if(num%3==0 && num%5==0){
 //   console.log("FizzBuzz", num);
 // }else{
@@ -124,7 +122,7 @@
 // console.log(name_(), "is clear");
 // function  name_() {
 //   return "The future"
-  
+
 // }
 
 // const power = (base, exponent) => {
@@ -181,7 +179,6 @@
 // }
 // let mea = multi(3)
 // console.log(mea(4));
-
 
 //_______________________Recursive funtions______________________________________________________
 // function numb1(team) {
@@ -251,20 +248,20 @@
 // let day1 = {
 //     squirrel: false,
 //     events: ["work", "touched tree", "pizza", "running"]
-    // };
-    // console.log(day1.squirrel);
-    // console.log(day1.events);
-    // → false
-    // console.log(day1.wolf);
-    // → undefined
-    // day1.wolf = false;
-    // console.log(day1.wolf);
-    // → false
+// };
+// console.log(day1.squirrel);
+// console.log(day1.events);
+// → false
+// console.log(day1.wolf);
+// → undefined
+// day1.wolf = false;
+// console.log(day1.wolf);
+// → false
 
 //     let events = {
 //         even:'this is even',
 //         number:'This is even number'
-        
+
 //     }
 //     console.log(events);
 // console.log(Object.keys({'even':2, 'odd':3}));
@@ -288,7 +285,7 @@
 
 // let A={a:2, b:3};
 // Object.assign(A, {c:4, d:8})
-// console.log(typeof A); 
+// console.log(typeof A);
 // console.log(A);
 
 // const score = {visitors:0, rooms:0};
@@ -318,8 +315,6 @@
 
 // console.log(journal.keys());
 // console.log(journal);
-
-
 
 // function phi(table) {
 //     return (table[3]*table[0]-table[2]*table[1])/
@@ -353,7 +348,6 @@
 // }
 // console.log(max(2,5,4,8,9,-2)); //this returns the maximum number if the array
 
-
 // let words = ['never', 'fully'];
 // console.log('will', ...words, 'understand'); //
 
@@ -369,7 +363,6 @@
 // let name = {name:'Fareed', age:15}
 // console.log(name.name);
 // console.log(name.age);
-
 
 // function phi([n00, n01, n10, n11]) {
 //     let a=(n11 * n00 - n10 * n01);
@@ -417,7 +410,6 @@
 // let angel = {move};
 // console.log(angel.move('wellington'));
 
-
 // Manipulating arrays using the spread [...] operator
 // const names=[
 //     'Bea',
@@ -448,7 +440,7 @@
 
 // function Keys(staff) {
 //     return staff.keys()
-    
+
 // }
 // console.log(Keys(staff));
 // const game1 = {
@@ -472,16 +464,16 @@
 //         total[stat]=(game1[stat]+game2[stat]);
 //         // console.log(stat[i].length);
 //     }
-    
+
 // }
 // console.log(total);
 
 const dogPair = {
-    name: 'Don',
-    color: 'black',
+  name: "Don",
+  color: "black",
 };
-if (dogPair.name='Don'){
-    console.log(dogPair.color);
+if ((dogPair.name = "Don")) {
+  console.log(dogPair.color);
 }
 console.log(dogPair.color + dogPair.name);
 
@@ -490,8 +482,7 @@ console.log(dogPair.color + dogPair.name);
 //     document.write(arr_to_display);
 // })
 
-
-let newDate= new Date();
+let newDate = new Date();
 document.write(newDate);
 
 // let price=prompt("Enter the price of an item: ");
@@ -531,31 +522,29 @@ document.write(newDate);
 
 // console.log(('The end').length);
 
-
 // function func(name){
 
 // }
-let nums="Welcome message"
-const func=function(nums){
-    console.log(nums);
-}
+let nums = "Welcome message";
+const func = function (nums) {
+  console.log(nums);
+};
 
-el=document.getElementById('demo');
-el.innerText=nums
+el = document.getElementById("demo");
+el.innerText = nums;
 
-let list=0
-let total=document.getElementById('demo2');
+let list = 0;
+let total = document.getElementById("demo2");
 let sum;
-const functionToDisplayAnArray=function() {
-    let display=document.getElementById('demo1')
-    display.addEventListener('click', (add)=>{
-        sum=add.target.id;
-        total.style.border='2px solid red';
-        total.innerHTML=nums;
-    })
-}
-functionToDisplayAnArray()
-
+const functionToDisplayAnArray = function () {
+  let display = document.getElementById("demo1");
+  display.addEventListener("click", (add) => {
+    sum = add.target.id;
+    total.style.border = "2px solid red";
+    total.innerHTML = nums;
+  });
+};
+functionToDisplayAnArray();
 
 // const getArea=function(width, height) {
 //     document.write(width*height);
@@ -606,8 +595,6 @@ functionToDisplayAnArray()
 // delete hotel.booked;
 // console.log(hotel.availableRooms());
 
-
-
 // function Hotel(name, rooms, booked) {
 //     this.name=name;
 //     this.rooms=rooms;
@@ -639,7 +626,6 @@ functionToDisplayAnArray()
 
 // var totalrooms=document.getElementById('available_room');
 // totalrooms.textContent=totalRooms();
-
 
 // var hotel=new Object();
 // hotel.name='Mensvic';
@@ -678,7 +664,6 @@ functionToDisplayAnArray()
 // console.log(text.toLowerCase());
 // console.log(text.charAt(5)); // operates like indexing in python. the opposite is 'indexOf()'
 // console.log(text.split(' '));
-
 
 // var v=8.0156485625;
 // console.log(v.toPrecision(5));
@@ -719,10 +704,9 @@ functionToDisplayAnArray()
 // }
 // console.log(calculatingAverage(data()));
 
-
 // let data=[4,5,6,3,2];
 // data.forEach(l=>{l+2});
-    
+
 // console.log(data, 'total');
 
 // function sample(array, combine, start) {
@@ -736,18 +720,16 @@ functionToDisplayAnArray()
 
 // console.log([1, 2, 3, 4].reduce((a, b) => a + b));
 
-
-
-listOfNumbers=[1,2];
-let lump=0;
-for(let i of listOfNumbers){
-    lump+=i;
+listOfNumbers = [1, 2];
+let lump = 0;
+for (let i of listOfNumbers) {
+  lump += i;
 }
-totalOfTheList=document.getElementById('summation');
-totalOfTheList.addEventListener('click', e=>{
-    // lump++
-    totalOfTheList.innerHTML=lump++;
-})
+totalOfTheList = document.getElementById("summation");
+totalOfTheList.addEventListener("click", (e) => {
+  // lump++
+  totalOfTheList.innerHTML = lump++;
+});
 
 // class Car{
 //     car(tyre) {
@@ -758,13 +740,12 @@ totalOfTheList.addEventListener('click', e=>{
 //     }
 // }
 
-let myVar=document.querySelector('#gym').style.color='blue';
+let myVar = (document.querySelector("#gym").style.color = "blue");
 
 // function multiply(num1, num2) {
 //     let result=num1*num2;
 //     return result;
 
-    
 // }
 // console.log(multiply(4,2));
 
@@ -783,8 +764,6 @@ let myVar=document.querySelector('#gym').style.color='blue';
 //     }
 // })
 // console.log(myImage);
-
-
 
 // let lots=[1,2,3,4,5,6,5,6,8,9,5];
 // for(let i in lots){
@@ -833,7 +812,6 @@ let myVar=document.querySelector('#gym').style.color='blue';
 //     }
 // ]
 
-
 // Several loop methods in JavaScript
 // console.log(`Hello I'm ${listDetails[0].username} and I'm ${listDetails[0].age} years old`);
 
@@ -858,9 +836,9 @@ let myVar=document.querySelector('#gym').style.color='blue';
 //     this.model = model
 //     this.name = names
 //     this.age = 15
-    // this.method=function () {
-    //     return `${this.model} ${this.name} years old`;
-    // }
+// this.method=function () {
+//     return `${this.model} ${this.name} years old`;
+// }
 // }
 
 // const myCar = new Car("Toyota", "Land Cruiser")
@@ -889,7 +867,7 @@ let myVar=document.querySelector('#gym').style.color='blue';
 //             }
 //             return instance
 //         }
-        
+
 //     };
 //     return newOrder;
 // }())
@@ -897,7 +875,6 @@ let myVar=document.querySelector('#gym').style.color='blue';
 //     pointX:2
 // })
 // console.log(callingFunction.pointX);
-
 
 // var Test = (function () {
 //     function Test2(params) {
@@ -935,18 +912,17 @@ let myVar=document.querySelector('#gym').style.color='blue';
 // const ma = (Math.random())
 // const man = Math.floor(ma * 10);
 // if (man > 5) {
-    //     console.log("Your order is ready")
-    
-    // } else {
-        //     console.log(letter[man]);
-        // }
-        
-let letter = [4, 5, 8, 7, 9]
-letter.forEach((a) => {
-    // tenary operator
-    a % 2 == 0 ? console.log(a) : console.log('Oddddd');;
-})
+//     console.log("Your order is ready")
 
+// } else {
+//     console.log(letter[man]);
+// }
+
+let letter = [4, 5, 8, 7, 9];
+letter.forEach((a) => {
+  // tenary operator
+  a % 2 == 0 ? console.log(a) : console.log("Oddddd");
+});
 
 // const f1 = function () {
 //     console.log("welcome to the hood");
@@ -959,39 +935,36 @@ letter.forEach((a) => {
 // }
 // console.log(f2());
 
-
 // Big Integer
 // console.log(14551555566994169n);
 // console.log(typeof(25n))
 
-const toggle = document.querySelectorAll('#toggle');
+const toggle = document.querySelectorAll("#toggle");
 
 toggle.forEach((a) => {
-    console.log(a.innerHTML);
-    a.addEventListener('click', () => {
-        console.log(a.innerText);
-        alert("You clicked a dom element")
-    } )
-})
+  console.log(a.innerHTML);
+  a.addEventListener("click", () => {
+    console.log(a.innerText);
+    alert("You clicked a dom element");
+  });
+});
 console.log(toggle);
 
-
 const promise = new Promise((resolve, reject) => {
-    if (true) {
-        resolve('worked');
-    }
-    else {
-        reject('Error, it broke')
-    }
-})
+  if (true) {
+    resolve("worked");
+  } else {
+    reject("Error, it broke");
+  }
+});
 
 promise
-    .then(response => response + '!')
-    .then(response1 => response1 + '!!')
-    .catch(() => console.log('aboooooozigi'))
-    .then(response2 => {
-        console.log(response2 + '!!!')
-    })
+  .then((response) => response + "!")
+  .then((response1) => response1 + "!!")
+  .catch(() => console.log("aboooooozigi"))
+  .then((response2) => {
+    console.log(response2 + "!!!");
+  });
 
 // const urls = [
 //     'https://www.github.com',
@@ -1011,46 +984,67 @@ promise
 //     console.log("You catch an Error")
 // }, 5000))
 
+// async function callb() {
+//     const func=await console.log(400, 'Good timing');
+// }
 
-async function callb() {
-    const func=await console.log(400, 'Good timing');
-}
-
-function printf(a,b) {
-    console.log(a + b);
-}
+// function printf(a,b) {
+//     console.log(a + b);
+// }
 // console.log(printf(2,25));
-async function printPrintf() {
-    const func = await printf(4, 5);
-    await printf(25, 40);
-    await printf(100, 50)
-}
+// async function printPrintf() {
+//     const func = await printf(4, 5);
+//     await printf(25, 40);
+//     await printf(100, 50)
+// }
 
-console.log(printPrintf());
+// console.log(printPrintf());
 
-const array1 = [1, 2, 3]
-const array2 = [5, 6, 7]
+// const array1 = [1, 2, 3]
+// const array2 = [5, 6, 7]
 
-const conca=function () {
-    console.log('concat method', array1.concat(array2))
-    array1.push(array2);
-    console.log('push method', array1.flat());
-    JSON.stringify(array1)
-        console.log('stringify',array1);
-        console.log('inner function',typeof(array1));
+// const conca=function () {
+//     console.log('concat method', array1.concat(array2))
+//     array1.push(array2);
+//     console.log('push method', array1.flat());
+//     JSON.stringify(array1)
+//         console.log('stringify',array1);
+//         console.log('inner function',typeof(array1));
 
-}
-console.log(typeof(array1));
-console.log(conca());
+// }
+// console.log(typeof(array1));
+// console.log(conca());
 // JSON.stringify(array1)
 // console.log(array1);
 // JSON.parse(array1)
 // console.log(array1);
 
 let a = 13;
-a == 12 ? console.log('good') : console.log('basd');
+a == 12 ? console.log("good") : console.log("bad");
 console.log(a);
 
-// nzemupygzhlxvqwu
+// const userObj = {
+//     username: 'Eugene',
+//     firstName: 'Allan',
+//     surname: 'Smith',
+//     age:27,
+// }
+
+// const newObj = JSON.stringify(userObj);
+// console.log('New User Object: ', newObj)
+
+// const parseObj = JSON.parse(newObj);
+// console.log(parseObj);
+
+const promiseone = new Promise((resolve, reject) => setTimeout(resolve, 3000));
+const promisetwo = new Promise((resolve, reject) => {
+  setTimeout(reject, 2000);
+});
+
+// You can use Promise.allSettled([]) to return all promises with both fulfilled and rejected results
+// When using Promise.all(), you need to introduce  a .catch() function to catch errors
+Promise.allSettled([promiseone, promisetwo]).then((response) => {
+  console.log(response);
+});
 
 

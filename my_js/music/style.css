@@ -1,0 +1,148 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+#container{
+    padding:10px;
+    background-color:rgba(0, 0, 0, 0.877);
+    color: beige;
+    /* height: 100vh; */
+}
+
+.head{
+    display: flex;
+    justify-content: start;
+    align-items: left;
+}
+
+.head img{
+    width: 40px;
+    height: 20px;
+    border-radius:5px;
+}
+
+.head input{
+    background-color:rgb(22, 15, 15);
+    color: beige;
+    width: 50%;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+}
+.head input:hover {
+    background-color: rgb(231, 223, 223);
+    border: none;
+}
+
+.section-by-3ree{
+    display: grid;
+    grid-template-columns: 0.2fr 8fr 4fr;
+    margin-top: 10px;
+}
+
+.navb{
+    padding-right: 0;
+    margin-right: 10px;
+}
+.navcom{
+    border-radius: 20px;
+    background-color:rgb(19, 24, 24);
+    padding:5px;
+}
+.navcom li{
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    list-style-type: none;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 0%;
+}
+
+.navcom li:first-child {
+    background-color:rgb(234, 243, 243);
+}
+
+.main-page{
+    width: 100%;
+    background: url(./fabrice-villard.jpg);
+    background-color: aqua;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.main-page p{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    top:-20px;
+}
+
+.main-page p:hover {
+    transform: scale(1.5);
+    visibility: hidden;
+    transition: 2s;
+}
+
+
+
+.charts{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-left p{
+    padding:5px;
+    line-height: 2px;
+}
+
+.specials{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:rgba(32, 22, 22, 0.767);
+}
+
+.chart img{
+    width:80px;
+    height: 80px;
+    border-radius:10px;
+    margin-right: 10px;
+}
+
+.curated{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg{border:1px solid rgb(255, 215, 0); border-radius:100%; padding:5px;color: azure;}
+
+/* others */
+.others{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+.others img{
+    width: 12em;
+    height: 10em;
+    border-radius: 15px; margin: 12px;
+    padding: 5px;
+}
+
+.others img:hover {
+    transform: scaleX(0.8);
+    transition: 2000ms;
+}
+

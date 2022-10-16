@@ -1,18 +1,16 @@
-.grid{
-    width: 608px;
-    height: 607px;
-    display: flex;
-    flex-wrap: wrap;
-
+.grid {
+  width: 608px;
+  height: 607px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.square{
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-
+.square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
 }
 
-.mole{
-    background-color: chartreuse;
+.mole {
+  background-color: chartreuse;
 }
